@@ -50,7 +50,7 @@
     color: white;
 }
 
-.build-control .more:hover,.build-control .more:active {
+.build-control .more:hover, .build-control .more:active {
     background-color: #99703F;
     color: white;
 }
