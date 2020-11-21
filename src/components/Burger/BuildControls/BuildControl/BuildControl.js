@@ -3,9 +3,14 @@ import './BuildControl.css'
 
 const buildControl = (props) => (
     <div className="build-control">
-        <div>{props.label}</div>
+        <div className="label">{props.label}</div>
         <button className="less">Less</button>
-        <button className="more">More</button>
+        <button 
+            className="more" 
+            onClick={props.added}
+        >
+            More
+        </button>
     </div>
 );
 
