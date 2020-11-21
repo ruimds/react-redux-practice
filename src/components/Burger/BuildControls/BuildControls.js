@@ -5,8 +5,8 @@ import './BuildControls.css';
 const controls = [
     {label: 'Salad', type: 'salad'},
     {label: 'Bacon', type: 'bacon'},
-    {label: 'Meat', type: 'cheese'},
-    {label: 'Cheese', type: 'meat'},
+    {label: 'Meat', type: 'meat'},
+    {label: 'Cheese', type: 'cheese'},
 ];
 
 const buildControls = (props)=> (
@@ -16,6 +16,8 @@ const buildControls = (props)=> (
                 key={ctrl.label} 
                 label={ctrl.label}
                 added={() => props.ingredientAdded(ctrl.type)}
+                removed={() => props.ingredientRemoved(ctrl.type)}
+                disabled={props.disabled[ctrl.type]}
             />
         ))}
     </div>
