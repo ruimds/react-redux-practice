@@ -1,5 +1,4 @@
 import React from 'react';
-import aux from '../../../hoc/Aux';
 import Aux from '../../../hoc/Aux'
 const orderSummary = (props) => {
     const ingredientSummary = Object.keys(props.ingredients)
