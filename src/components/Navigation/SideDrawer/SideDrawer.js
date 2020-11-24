@@ -8,8 +8,8 @@ import './SideDrawer.css';
 const sideDrawer = (props) => {
     return (
         <Aux>
-            <Backdrop show/>
-            <div className="side-drawer">
+            <Backdrop show={props.open} clicked={props.closed}/>
+            <div className={`side-drawer ${props.open ? 'open' : 'close'}`}>
                 <Logo />
                 <nav>
                     <NavigationItems />
